@@ -4,7 +4,7 @@ namespace TobyMaxham\Helper\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class Cors
