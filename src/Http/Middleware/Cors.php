@@ -35,7 +35,7 @@ class Cors
      */
     private function addCorsHeaders(Response $response)
     {
-        if (!$response->headers->has('Access-Control-Allow-Origin')) {
+        if (! $response->headers->has('Access-Control-Allow-Origin')) {
             $response = $response->header('Access-Control-Allow-Origin', '*')
                 ->header('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS');
         }
