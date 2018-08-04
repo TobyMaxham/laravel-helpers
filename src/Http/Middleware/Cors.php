@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Class Cors
+ * Class Cors.
  *
  * @author Tobias Maxham <git2018@maxham.de>
  */
@@ -24,6 +24,7 @@ class Cors
     public function handle(Request $request, Closure $next)
     {
         $response = $next($request);
+
         return $this->addCorsHeaders($response);
     }
 
