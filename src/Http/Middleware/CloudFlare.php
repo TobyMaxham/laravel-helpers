@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
 /**
- * Class CloudFlare.
+ * Class CloudFlare
  *
  * @author Tobias Maxham <git2018@maxham.de>
  */
