@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Redirect;
 
 /**
  * Class CloudFlare
- * @package App\Http\Middleware
+ * @package TobyMaxham\Helper\Http\Middleware
+ *
  * @author Tobias Maxham <git2018@maxham.de>
  */
 class CloudFlare
@@ -16,8 +17,9 @@ class CloudFlare
     /**
      * Handle an incoming request.
      *
-     * @param  Request $request
-     * @param  Closure $next
+     * @param Request $request
+     * @param Closure $next
+     *
      * @return mixed
      */
     public function handle(Request $request, Closure $next)

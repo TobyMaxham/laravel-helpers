@@ -1,10 +1,10 @@
 # TobyMaxham Laravel Helpers
 
-[![Latest Stable Version](https://poser.pugx.org/tobymaxham/laravel-helper/v/stable)](https://packagist.org/packages/tobymaxham/laravel-helper)
-[![Total Downloads](https://poser.pugx.org/tobymaxham/laravel-helper/downloads)](https://packagist.org/packages/tobymaxham/laravel-helper)
-[![Latest Unstable Version](https://poser.pugx.org/tobymaxham/laravel-helper/v/unstable)](https://packagist.org/packages/tobymaxham/laravel-helper)
-[![License](https://poser.pugx.org/tobymaxham/laravel-helper/license)](https://packagist.org/packages/tobymaxham/laravel-helper)
-
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/tobymaxham/laravel-helper.svg?style=flat-square)](https://packagist.org/packages/tobymaxham/laravel-helper)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Quality Score](https://img.shields.io/scrutinizer/g/TobyMaxham/laravel-helpers.svg?style=flat-square)](https://scrutinizer-ci.com/g/TobyMaxham/laravel-helpers)
+[![StyleCI](https://styleci.io/repos/143056829/shield?branch=master)](https://styleci.io/repos/143056829)
+[![Total Downloads](https://img.shields.io/packagist/dt/tobymaxham/laravel-helper.svg?style=flat-square)](https://packagist.org/packages/tobymaxham/laravel-helper)
 
 ## Installation
 
