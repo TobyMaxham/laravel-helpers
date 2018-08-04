@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('_val')) {
+if (! function_exists('_val')) {
     /**
      * @param $value
      * @param null $default
