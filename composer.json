@@ -2,7 +2,12 @@
     "name": "tobymaxham/laravel-helper",
     "description": "Bundle of Laravel helper stuff",
     "license": "MIT",
+    "keywords": ["tobymaxham","helpers", "laravel"],
     "homepage": "https://github.com/TobyMaxhahm/laravel-helpers",
+    "support": {
+        "issues": "https://github.com/TobyMaxham/laravel-helpers/issues",
+        "source": "https://github.com/TobyMaxham/laravel-helpers"
+    },
     "authors": [
         {
             "name": "Tobias Maxham",
@@ -19,6 +24,9 @@
         "orchestra/testbench": "~3.5.0|~3.6.0"
     },
     "autoload": {
+        "files": [
+            "src/Support/tmaxham_helpers.php"
+        ],
         "psr-4": {
             "TobyMaxham\\Helper\\": "src"
         }
