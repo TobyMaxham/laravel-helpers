@@ -41,6 +41,32 @@ public function getCreatedByColumn()
 }
 ```
 
+#### Migration
+
+With my `MigrationHelper` you can automatically add the fields to you migrations file:
+```php
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('posts', function (Blueprint $table) {
+            $table->increments('id');
+
+            $table->string('title');
+            $table->text('content');
+
+            MigrationHelper::addCreatedByUser($table);
+
+            $table->timestamps();
+        });
+    }
+```
+
+Or you can create all three fields at once by calling `MigrationHelper::addChangedByUserFields($table)`.
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
