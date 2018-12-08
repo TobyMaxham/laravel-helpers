@@ -14,6 +14,33 @@ You can install this package via composer:
 composer require tobymaxham/laravel-helper
 ```
 
+## Model Logging
+
+### Track User changes
+
+Track if user created, updated or deleted a `Model`. You have to add these attributes to you database table.
+By default the fields `created_by`, `updated_by` and `deleted_by` fields will be used.
+
+```php
+namespace App;
+
+use TobyMaxham\Helper\Models\Logs\ChangeByUser;
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    use ChangeByUser;
+}
+```
+
+You could also turn off tracking by returning `false` to the attribute fetching methods:
+```php
+public function getCreatedByColumn()
+{
+    return false;
+}
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
