@@ -2,14 +2,6 @@
 
 namespace TobyMaxham\Helper\Tests;
 
-use Illuminate\Support\Facades\Request;
-use TobyMaxham\Helper\Http\Middleware\Cors;
-
-/**
- * Class CorsMiddlewareTest
- * @package ${NAMESPACE}
- * @author Tobias Maxham <git2018@maxham.de>
- */
 class CorsMiddlewareTest extends TestCase
 {
     /** @test */

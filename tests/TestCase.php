@@ -5,11 +5,6 @@ namespace TobyMaxham\Helper\Tests;
 use Orchestra\Testbench\TestCase as Orchestra;
 use TobyMaxham\Helper\Http\Middleware\Cors;
 
-/**
- * Class TestCase
- * @package TobyMaxham\Helper\Test
- * @author Tobias Maxham <git2018@maxham.de>
- */
 class TestCase extends Orchestra
 {
     protected function setUp()
@@ -27,10 +22,10 @@ class TestCase extends Orchestra
     {
         $router->group(['middleware' => Cors::class], function () use ($router) {
             $router->get('api/ping', [
-                'as' => 'api.ping',
+                'as'   => 'api.ping',
                 'uses' => function () {
                     return 'pong';
-                }
+                },
             ]);
         });
     }
