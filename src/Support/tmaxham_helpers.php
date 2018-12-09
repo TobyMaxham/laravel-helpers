@@ -2,8 +2,8 @@
 
 if (! function_exists('_val')) {
     /**
-     * @param $value
-     * @param null $default
+     * @param mixed      $value
+     * @param null|mixed $default
      *
      * @return mixed
      */

@@ -15,9 +15,10 @@ class MigrationHelper
     public static function uuid(Blueprint $table, string $comment = null)
     {
         $table->char('uuid', 36);
-        $table->unique('uuid', 'uuid');
+        /** @var \Illuminate\Support\Fluent $fluent */
+        $fluent = $table->unique('uuid', 'uuid');
         if (! is_null($comment)) {
-            $table->comment = $comment;
+            $fluent->comment = $comment;
         }
     }
 
