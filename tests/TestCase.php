@@ -2,8 +2,8 @@
 
 namespace TobyMaxham\Helper\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use TobyMaxham\Helper\Http\Middleware\Cors;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
