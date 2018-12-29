@@ -2,6 +2,10 @@
 
 All notable changes to `tobymaxham/laravel-helper` will be documented in this file.
 
+## v1.3.5 - 2018-12-29
+
+- Fixed a Bug when dealing with streamed Responses
+
 ## v1.2 - v1.3 - 2018-12-09
 
 - added PrettyPrint JSON Middleware
