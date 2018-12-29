@@ -4,6 +4,11 @@ namespace TobyMaxham\Helper\Database;
 
 use Illuminate\Database\Schema\Blueprint;
 
+/**
+ * Class MigrationHelper.
+ *
+ * @author Tobias Maxham <git2019@maxham.de>
+ */
 class MigrationHelper
 {
     const REFERENTIAL_ACTION_CASCADE = 'CASCADE';

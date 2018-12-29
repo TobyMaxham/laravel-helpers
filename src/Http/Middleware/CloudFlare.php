@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Redirect;
 /**
  * Class CloudFlare.
  *
- * @author Tobias Maxham <git2018@maxham.de>
+ * @author Tobias Maxham <git2019@maxham.de>
  */
 class CloudFlare
 {
@@ -23,11 +23,11 @@ class CloudFlare
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->server('HTTP_X_FORWARDED_PROTO') == 'https') {
+        if ('https' == $request->server('HTTP_X_FORWARDED_PROTO')) {
             $request->server->set('HTTPS', 'on');
         }
 
-        if (! $request->secure() && env('APP_ENV') === 'production') {
+        if (! $request->secure() && 'production' === env('APP_ENV')) {
             return Redirect::secure($request->getRequestUri());
         }
 

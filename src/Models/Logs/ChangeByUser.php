@@ -5,6 +5,9 @@ namespace TobyMaxham\Helper\Models\Logs;
 use App;
 use Auth;
 
+/**
+ * @author Tobias Maxham <git2019@maxham.de>
+ */
 trait ChangeByUser
 {
     /**

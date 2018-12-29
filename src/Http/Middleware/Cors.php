@@ -4,12 +4,11 @@ namespace TobyMaxham\Helper\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class Cors.
  *
- * @author Tobias Maxham <git2018@maxham.de>
+ * @author Tobias Maxham <git2019@maxham.de>
  */
 class Cors
 {
@@ -24,16 +23,19 @@ class Cors
     public function handle(Request $request, Closure $next)
     {
         $response = $next($request);
+        if (! method_exists($response, 'header')) {
+            return $response;
+        }
 
         return $this->addCorsHeaders($response);
     }
 
     /**
-     * @param Response $response
+     * @param \Symfony\Component\HttpFoundation\Response|\Illuminate\Http\Response $response
      *
-     * @return Response
+     * @return \Symfony\Component\HttpFoundation\Response|\Illuminate\Http\Response
      */
-    private function addCorsHeaders(Response $response)
+    private function addCorsHeaders($response)
     {
         if (! $response->headers->has('Access-Control-Allow-Origin')) {
             $response = $response->header('Access-Control-Allow-Origin', config('tma-helper.cors.allowedOrigins', 'localhost'))
