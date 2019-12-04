@@ -38,5 +38,12 @@
         "psr-4": {
             "TobyMaxham\\Helper\\Tests\\": "tests"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TobyMaxham\\Helper\\HelperServiceProvider"
+            ]
+        }
     }
 }
