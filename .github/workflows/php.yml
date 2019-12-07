@@ -1,0 +1,23 @@
+name: PHP Composer / PHPUnit
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+      id: "1"
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress --no-suggest
+      id: "2"
+    
+    - name: Run PhpUnit Tests
+      run: composer test
+      id: "3"
