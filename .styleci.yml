@@ -1,6 +1,6 @@
 preset: laravel
 
-disable:
+disabled:
   - alpha_ordered_imports
 
 enabled:
