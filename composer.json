@@ -39,6 +39,12 @@
             "TobyMaxham\\Helper\\Tests\\": "tests"
         }
     },
+    "scripts": {
+      "test": ["vendor/bin/phpunit"]
+    },
+    "scripts-descriptions": {
+      "test": "Run PHPUnit tests!"
+    },
     "extra": {
         "laravel": {
             "providers": [

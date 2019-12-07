@@ -12,12 +12,12 @@ jobs:
 
     - name: Validate composer.json and composer.lock
       run: composer validate
-      id: "1"
+      id: "action-1"
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
-      id: "2"
+      id: "action-2"
     
     - name: Run PhpUnit Tests
       run: composer test
-      id: "3"
+      id: "action-3"

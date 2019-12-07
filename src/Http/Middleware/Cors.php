@@ -40,6 +40,10 @@ class Cors
         if (! $response->headers->has('Access-Control-Allow-Origin')) {
             $response = $response->header('Access-Control-Allow-Origin', config('tma-helper.cors.allowedOrigins', 'localhost'))
                 ->header('Access-Control-Allow-Methods', config('tma-helper.cors.allowedMethods'));
+
+            foreach (config('tma-helper.cors.headers', []) as $header => $value) {
+                $response->header($header, $value);
+            }
         }
 
         return $response;
