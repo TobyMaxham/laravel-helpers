@@ -18,7 +18,7 @@
     ],
     "require": {
         "ext-json": "*",
-        "illuminate/http": "v5.*"
+        "illuminate/http": ">=5.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.1|^7.0",

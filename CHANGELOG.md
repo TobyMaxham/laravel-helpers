@@ -2,6 +2,11 @@
 
 All notable changes to `tobymaxham/laravel-helper` will be documented in this file.
 
+## v1.4
+
+- We have removed support for older Laravel versions. Since Laravel 5.5 (LTS) Security Fixes
+Supports ends on August 30th 2020, we will keep this as a minimum for our package.
+
 ## v1.3.5 - 2018-12-29
 
 - Fixed a Bug when dealing with streamed Responses
